@@ -1,12 +1,11 @@
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize.Sequelize({
-  host: 'localhost',
-	dialect: 'sqlite',
-	logging: false,
+  host: "localhost",
+  dialect: "sqlite",
+  logging: false,
   dialect: "sqlite",
   storage: "db/database.sqlite",
-  
 });
 
 const Devices = sequelize.define(
@@ -37,6 +36,6 @@ const Devices = sequelize.define(
 
 module.exports = {
   sequelize,
-  
+
   Devices,
 };
